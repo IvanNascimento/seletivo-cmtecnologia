@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/index.js"></script>
+    <script>
+      function onClick() {
+        const saida = document.getElementById("result");
+        const entrada = document.getElementById("num").value;
+        saida.innerText = somaMultiplos(parseInt(entrada));
+      }
+    </script>
+  </head>
+  <body>
+    <label for="num">Número: </label>
+    <input type="number" name="numero" id="num" />
+    <button type="button" onclick="onClick()">Verificar</button>
+    <hr />
+    <textarea name="" id="result" cols="30" rows="10"></textarea>
+  </body>
+</html>
